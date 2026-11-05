@@ -1,0 +1,63 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python and Django
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.sqlite3
+db.sqlite3
+staticfiles/
+
+# User uploads and locally generated RAG data
+uploads/
+media/
+storage/
+object-storage/
+data/
+sample-corpus/private/
+embeddings/
+vectors/
+vector-store/
+chroma/
+faiss_index*/
+*.faiss
+*.index
+
+# Background-job and application runtime files
+logs/
+*.log
+*.pid
+celerybeat-schedule
+
+# JavaScript dependencies and build output
+node_modules/
+dist/
+build/
+.parcel-cache/
+
+# Editors and operating-system files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
